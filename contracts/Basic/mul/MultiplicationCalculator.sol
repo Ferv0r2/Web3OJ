@@ -5,8 +5,8 @@ interface IMultiplicationCalculator {
     function multiply(uint256, uint256) external pure returns (uint256);
 }
 
-contract MyMultiplicationCalculator is IMultiplicationCalculator {
+contract MultiplicationCalculator is IMultiplicationCalculator {
     function multiply(uint256 input1, uint256 input2) override public pure returns (uint256){
-        // 여기에 작성하시오.
+        return input1 * input2;
     }
 }

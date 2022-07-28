@@ -5,8 +5,8 @@ interface IDivisionCalculator {
     function divide(uint256, uint256) external pure returns (uint256);
 }
 
-contract MyDivisionCalculator is IDivisionCalculator {
+contract DivisionCalculator is IDivisionCalculator {
     function divide(uint256 input1, uint256 input2) override public pure returns (uint256){
-        // TODO
+        return input1 / input2;
     }
 }
